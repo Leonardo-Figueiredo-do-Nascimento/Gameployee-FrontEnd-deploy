@@ -1,0 +1,72 @@
+input{
+    width: 300px;
+    height: auto;
+}
+
+input[type="text"] , input[type="email"]{
+    height: 20px;
+    padding: 8px;
+}
+
+form{
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 37%;
+}
+
+form input{
+    margin-bottom: 20px;
+}
+
+form input[type="submit"]{
+    padding: 10px;
+    height: 40px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:active{
+    background-color: white;
+    color: black;
+}
+.perfis{
+    width: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    font-size: 25px;
+    height: auto;
+}
+
+.perfis input[type="radio"]{
+    transform: scale(2);
+}
+
+.carreiras{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: 20px 0;
+    
+}
+
+.registro{
+    height: auto;
+}
+
+#h3Area{
+    font-size: 50px;
+    height: auto;
+    margin-top: 40px;
+    width: auto;
+}

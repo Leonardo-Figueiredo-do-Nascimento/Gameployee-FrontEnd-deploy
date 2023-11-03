@@ -1,0 +1,79 @@
+#nome-empresa{
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 40%;
+    margin-bottom: 50px;
+}
+.empresa-container{
+    height: auto;
+}
+.visible-elements{
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.painel-vagas{
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+    background-color: rgb(207, 203, 203);
+    padding: 50px;
+}
+
+.vaga-renderizada{
+    height: auto;
+    width: 70%;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#bts-add{
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+}
+.concurso-renderizado{
+    height: auto;
+    width: 70%;
+    background-color: rgb(209, 133, 133);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid rgb(206, 172, 69);
+}
+.bt_opcoesConcurso{
+    width: auto;
+}
+#vaga,#concurso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#p-titulo-vaga,#p-titulo-concurso{
+    height: auto;
+    width: auto;
+    margin-bottom: 5px;
+}
+#p-cargo-vaga,#p-cargo-concurso{
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#p-descricao-vaga,#p-descricao-concurso{
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 5px;
+}

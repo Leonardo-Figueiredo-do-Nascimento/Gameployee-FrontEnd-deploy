@@ -1,0 +1,36 @@
+.header{
+    height: 10%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+
+a{
+    padding-left: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-buttons{
+    padding-top: 15px;
+}
+
+.links{
+    color: white;
+    padding: 20px;
+}
+.links:hover{
+    background-color: rgb(59, 56, 56);
+    transition: 0.5s;
+}
+
+.user-buttons{
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,104 @@
+#vagas-h1{
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 5%;
+    font-size: 50px;
+}
+
+.painel-escolhas-vagas{
+    margin-top: 50px;
+    height: auto;
+    width: auto;  
+    margin-left: 25%; 
+}
+
+.opcoes-vagas{
+    width: auto;
+    margin-left: 50px;
+}
+
+.container-vagas{
+    height: auto;
+    width: auto;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.vagas-renderizadas{
+    height: auto;
+    width: 400px;
+    background-color: rgb(178, 198, 215);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid black;
+}
+.concursos-renderizadas{
+    height: auto;
+    width: 400px;
+    background-color: rgb(224, 87, 59);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+#p3-titulo-vaga,#p3-titulo-concurso{
+    height: auto;
+    width: auto;
+}
+#p2-cargo-vaga,#p2-cargo-concurso,#p1-email-vaga,#p1-email-concurso{
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#p2-nome-empresa-vaga,#p2-nome-empresa-concurso{
+    height: auto;
+    width: auto;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#p1-descricao-vaga,#p2-email-vaga,#p2-email-concurso,#p1-descricao-concurso{
+    height: auto;
+    width: auto;
+    font-size: 20px;
+}
+#bt_participe{
+    height: 4rem;
+    width: 100px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    padding-top: 1rem;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+#bt_participe:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    
+}

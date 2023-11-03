@@ -1,0 +1,66 @@
+#candidatos-h1{
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    margin-left: 5%;
+    font-size: 50px;
+}
+
+.painel-escolhas-candidatos{
+    margin-top: 50px;
+    height: auto;
+    width: auto;  
+    margin-left: 25%; 
+}
+
+.opcoes-candidatos{
+    width: auto;
+    margin-left: 50px;
+}
+
+.container-devs{
+    height: auto;
+    width: auto;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.usuarios-renderizados{
+    height: auto;
+    width: auto;
+    background-color: rgb(178, 198, 215);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+#p4-nome-usuario{
+    height: auto;
+    width: auto;
+}
+#p3-cargo-usuario{
+    height: auto;
+    width: auto;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#p2-telefone-usuario{
+    height: auto;
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+#p1-email-usuario{
+    height: auto;
+    width: auto;
+    font-size: 18px;
+}
