@@ -1,5 +1,5 @@
 const config = {
-    serverAddress: 'http://localhost:3000',
+    serverAddress: 'https://gameployee-backend-deploy-production.up.railway.app',
 };
   
   export default config;
