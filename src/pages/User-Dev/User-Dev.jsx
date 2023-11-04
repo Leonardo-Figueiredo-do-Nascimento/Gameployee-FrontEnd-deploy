@@ -47,43 +47,44 @@ export default function User_Dev(){
     const mudarTelefone = async (e) =>{
         e.preventDefault()
         const novoTelefone = prompt("Digite o novo numero de telefone pra contato")
-        axios.patch(`${URLServidor}/Mudar_Telefone/${devId}/${novoTelefone}`)
-        .then((res) => {
-            console.log(res.message)
-        })
-        .catch((err) => console.error(err));
-
-        window.location.reload()
+        if(novoTelefone != null){
+            if(novoTelefone != ''){
+                axios.patch(`${URLServidor}/Mudar_Telefone/${devId}/${novoTelefone}`)
+                .then((res) => {
+                    console.log(res.message)
+                    window.location.reload()
+                })
+                .catch((err) => console.error(err));
+            }else {
+                return ;
+            }
+        }else{
+            return ;
+        }
     }
 
     const excluirTrabalho = async (e,id_trabalho) =>{
         e.preventDefault()
         const exclusão = confirm("Quer mesmo excluir esse trabalho?")
         if(exclusão){
-
             axios.delete(`${URLServidor}/Deletar_Trabalho/${id_trabalho}`)
             .then((res) => {
                 console.log(res.message)
+                window.location.reload()
             })
             .catch((err) => console.error(err));
-
-            window.location.reload()
         } else{
             return;
         }
     }
 
     const postarTrabalho = async (e) =>{
-
         e.preventDefault()
-
         axios.post(`${URLServidor}/Postar_Trabalho/${devId}`,trabalho)
         .then((res) => {
             console.log(res)
+            window.location.reload()
         })
-        .catch((err) => console.error(err));
-        
-        window.location.reload()
     }
 
     return(

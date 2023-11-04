@@ -72,17 +72,17 @@ export default function User_Companie(){
             axios.post(`${URLServidor}/Postar_Vaga`,vaga)
             .then(response => {
                 console.log(response.data)
+                window.location.reload()
             })
-            .catch(error => console.error(error)) 
-            window.location.reload()
+            .catch(error => console.error(error))
         }
         if(escolha == 'concurso'){
             axios.post(`${URLServidor}/Postar_Concurso`,concurso)
             .then(response => {
                 console.log(response.data)
+                window.location.reload()
             })
             .catch(error => console.error(error))
-            window.location.reload()
         }
         setAddVaga(false)
         setVaga()
@@ -94,9 +94,9 @@ export default function User_Companie(){
             axios.delete(`${URLServidor}/Deletar_Concurso/${id_concurso}`)
             .then((res) => {
                 console.log(res.message)
+                window.location.reload()
             })
             .catch((err) => console.error(err));
-            window.location.reload()
         } else{
             return;
     }}
@@ -107,9 +107,9 @@ export default function User_Companie(){
             axios.delete(`${URLServidor}/Deletar_Vaga/${id_vaga}`)
             .then((res) => {
                 console.log(res.message)
+                window.location.reload()
             })
             .catch((err) => console.error(err));
-            window.location.reload()
         } else{
             return;
         }

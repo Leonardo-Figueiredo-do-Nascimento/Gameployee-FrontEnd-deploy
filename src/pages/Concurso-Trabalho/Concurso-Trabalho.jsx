@@ -54,14 +54,12 @@ export default function User_Dev(){
         e.preventDefault()
         const exclusão = confirm("Quer mesmo excluir esse trabalho?")
         if(exclusão){
-
             axios.delete(`${URLServidor}/Deletar_Trabalho_Concurso/${idConcurso}/${devId}`)
             .then((res) => {
                 console.log(res.message)
+                window.location.reload()
             })
             .catch((err) => console.error(err));
-
-            window.location.reload()
         } else{
             return;
         }
@@ -70,14 +68,13 @@ export default function User_Dev(){
     const postarTrabalho = async (e) =>{
 
         e.preventDefault()
-
         axios.post(`${URLServidor}/Postar_Trabalho_Concurso/${devId}`,trabalho)
         .then((res) => {
             console.log(res)
+            window.location.reload()
         })
         .catch((err) => console.error(err));
         console.log(trabalho)
-        window.location.reload()
     }
 
     return(
