@@ -58,7 +58,7 @@ const router = createBrowserRouter([
         element: <Concurso_Devs/>
     },
     {
-        path:"/Usuario/Desenvolvedor/:devId/:devName/Concurso/:idConcurso",
+        path:"/Usuario/Desenvolvedor/:devId/:devName/:devCargo/Concurso/:idConcurso",
         element: <Concurso_Trabalho/>
     }
 ])
