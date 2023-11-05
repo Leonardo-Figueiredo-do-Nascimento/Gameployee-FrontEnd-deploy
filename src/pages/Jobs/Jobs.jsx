@@ -6,7 +6,7 @@ import config from "../URL";
 const URLServidor = config.serverAddress
 
 export default function Jobs(){
-    const {devId, devName} = useParams()
+    const {devId, devName,devCargo} = useParams()
     const [cargosEscolhidos, setCargosEscolhidos] = useState([])
     const [vagas,setVagas] = useState([]) 
     const [concursos,setConcursos] = useState([]) 
@@ -81,7 +81,7 @@ export default function Jobs(){
                                     <p id="p3-titulo-concurso">{concurso.titulo_concurso}</p>
                                     <p id="p2-cargo-concurso">{concurso.cargo}</p>
                                     <p id="p1-descricao-concurso">{concurso.descrição}</p>
-                                    <Link id='bt_participe' to={`/Usuario/Desenvolvedor/${devId}/${devName}/Concurso/${concurso.id_concurso}`}>Participe</Link>
+                                    <Link id='bt_participe' to={`/Usuario/Desenvolvedor/${devId}/${devName}/${devCargo}/Concurso/${concurso.id_concurso}`}>Participe</Link>
                                </div>)
                             }
                         })
